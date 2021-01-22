@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="https://0e878ed3f415.ngrok.io" content="IE=Edge">
+  
+  <link rel="shortcut icon" href="Images/snitch.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Snitch</title>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+<script src="gs://chat-9bd07.appspot.com"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+</head>
+
+<body id="body">
+
+  <div>
+    <div id="tittle">
+      Snitch
+    </div>
+  </div>
+  <fieldset id="fieldset">
+    <ul id="messages"></ul>
+  </fieldset>
+  <center>
+    <form onsubmit="return sendMessage();" id="form" method="POST">
+      <div class="msg">
+        <input id="messaage" placeholder="Digite uma mensagem..." autocomplete="off" autofocus required/>
+    </form>
+        <button type="submit" onclick="final()" id="btn" class="btn2"><img src="Images/filled-sent.png" id="img_sent" alt="Enviar mensagem"/></button>
+        <button onclick="dlt()" hidden><img src="Images/trash.png" id="img_trash" alt="Deletar" hidden/></button>
+        <button onclick="tlfn()" id="btn2" class="btn2"><img src="Images/phone.png" id="img_phone" alt="Telefone"/></button>
+      </div>
+  </center>
+<script src="main.js"></script>
+<script src="Firebase.js"></script>
+<script src="Imagens.js"></script>
+
+</body>
+
+</html>
