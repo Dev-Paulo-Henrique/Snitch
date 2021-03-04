@@ -5,7 +5,7 @@ function dlt(){
 }
     
 function tlfn(){
-  document.getElementById("messaage").value="Quer me ligar? " + "<br>" + "<strong>" + "<a href=tel:'number'>" + number + "</a>" + "</strong>";
+  document.getElementById("messaage").value="Quer me ligar? " + "<br>" + "<strong>" + "<a href=tel:'number'>" + number.value + "</a>" + "</strong>";
   document.getElementById("btn").click();
   document.getElementById("messaage").value="";
 }
